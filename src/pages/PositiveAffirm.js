@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const PositiveAffirm = () => {
   return (
-    <div>긍정확언</div>
-  )
-}
+    <div>
+      <p>긍정확언</p>
+    </div>
+  );
+};
 
-export default PositiveAffirm
+export default PositiveAffirm;

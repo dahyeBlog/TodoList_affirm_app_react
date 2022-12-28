@@ -1,16 +1,20 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import SideMenu from "./components/SideMenu";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
-import PrivateRoute from "./components/PrivateRoute";
+import PositiveAffirm from "./pages/PositiveAffirm";
+import TodoList from "./pages/TodoList";
+import AccountBook from "./pages/AccountBook";
+import PrivateRoute from "./components/PrivateRoute"
 
 function App() {
   return (
     <Router>
       <Navbar />
-
+      <SideMenu />
       <Routes>
         <Route
           path="/*"
@@ -22,6 +26,10 @@ function App() {
         ></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/login" element={<Login />}></Route>
+
+        <Route path="/positive" element={<PositiveAffirm />}></Route>
+        <Route path="/todolist" element={<TodoList />}></Route>
+        <Route path="/account" element={<AccountBook />}></Route>
       </Routes>
     </Router>
   );

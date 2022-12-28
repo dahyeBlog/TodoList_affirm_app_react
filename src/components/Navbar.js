@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <Nav className="flex">
       <h3>
-        <Link to="/"> 오늘의 긍정 🕊️ </Link>
+        <Link to="/"> 오늘의 할일 🕊️ </Link>
       </h3>
 
       <NavWrapper>

@@ -1,32 +1,21 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import PositiveAffirm from "../pages/PositiveAffirm";
-import TodoList from "../pages/TodoList";
-import AccountBook from "../pages/AccountBook";
 
 const SideMenu = () => {
-
-
   return (
     <MenuSection>
       <div className="sidebar">
         <ul>
           <li>
-            <Link to="/positive" >
-              <PositiveAffirm />
-            </Link>
+            <Link to="/positive">긍정확언</Link>
           </li>
 
           <li>
-            <Link to="/todolist" >
-              <TodoList />
-            </Link>
+            <Link to="/todolist">TodoList</Link>
           </li>
           <li>
-            <Link to="/account">
-              <AccountBook />
-            </Link>
+            <Link to="/account">가계부</Link>
           </li>
         </ul>
       </div>
@@ -35,9 +24,7 @@ const SideMenu = () => {
 };
 
 const MenuSection = styled.section`
-  display: flex;
-  position: relative;
-
+  position: fixed;
   .sidebar {
     width: 150px;
     height: 100%;
@@ -64,8 +51,6 @@ const MenuSection = styled.section`
   .sidebar ul li:hover a {
     color: #fff;
   }
-
-
 `;
 
 export default SideMenu;
