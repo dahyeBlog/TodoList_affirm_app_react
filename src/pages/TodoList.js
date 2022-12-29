@@ -18,7 +18,7 @@ const TodoList = () => {
   const { user } = useContext(AuthContext);
   const [todoInput, setTodoInput] = useState("");
   const [todos, setTodos] = useState([]);
-  
+
   //Create Todolist - 데이터베이스에 저장하기
   const createTodo = async (e) => {
     e.preventDefault();
@@ -53,11 +53,9 @@ const TodoList = () => {
 
   //Update todoList - 저장한 데이터 업데이트하기
   const toggleComplete = async (todo) => {
-    
-      await updateDoc(doc(firestoreDb, "todos", todo.id), {
-        completed: !todo.completed,
-      });
-    
+    await updateDoc(doc(firestoreDb, "todos", todo.id), {
+      completed: !todo.completed,
+    });
   };
 
   //Delete Todolist - 저장한 데이터 삭제하기
@@ -142,7 +140,6 @@ const TodoListSection = styled.section`
     cursor: pointer;
     color: rgb(241 245 249);
     margin-left: 0.5rem;
-    padding: 1rem;
     border-radius: 5px;
     height: 50px;
     width: 80px;
@@ -155,6 +152,32 @@ const TodoListSection = styled.section`
 
   ul {
     list-style: none;
+  }
+
+  
+  @media screen and (max-width: 700px) {
+    left: 100px;
+    width: calc(100vw - 100px);
+
+    .todoContainer {
+      padding: 10px;
+      max-width: 200px;
+      width: 100%;
+    }
+    form {
+      justify-content: center;
+    }
+
+    input {
+      width: 70%;
+      margin-left: 0px;
+    }
+    .addBtn {
+      padding: 0px;
+      margin-left: 10px;
+      height: 40px;
+      width: 40px;
+    }
   }
 `;
 

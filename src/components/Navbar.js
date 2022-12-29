@@ -16,6 +16,7 @@ const Navbar = () => {
     navigate("/login");
   };
 
+
   return (
     <Nav className="flex">
       <h3>

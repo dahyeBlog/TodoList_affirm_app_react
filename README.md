@@ -1,5 +1,5 @@
 # 긍정 확언 리액트 앱
-- todolist 및 명언, 언어 변환, 가계부 사이트
+- todolist 및 명언 등록, 가계부 사이트
 
 ## 데모
 - 
@@ -9,8 +9,7 @@
 - 로그인
 - 로그아웃
 - 홈화면 날씨 검색 및 현재 날씨
-- 본인의 긍정 글귀 등록(이미지 등록, 삭제, 업데이트)
-- 영어 번역 
+- 동기부여 페이지에 이미지 업로드 및 삭제, 업데이트
 - TodoList
 - 가계부
 
@@ -23,10 +22,7 @@
 - npm install --save @fortawesome/react-fontawesome
 - npm i @fortawesome/free-brands-svg-icons
 - npm i axios
-
-
-## 어려웠던 점과 개선하고 싶은 부분
-
+- npm i uuid
 
 
 ## Firebase CRUD

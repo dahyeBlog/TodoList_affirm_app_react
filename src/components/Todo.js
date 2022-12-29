@@ -80,5 +80,18 @@ const TodoListLi = styled.li`
       margin-left: 5px;
     }
   }
+
+  @media screen and (max-width: 700px) {
+    .deleteBtn {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    span {
+      display: none;
+    }
+  }
 `;
 export default Todo;

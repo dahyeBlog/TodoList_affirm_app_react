@@ -109,6 +109,16 @@ const Login = () => {
 };
 
 const LoginSection = styled.section`
+  position: absolute;
+  left: 150px;
+  width: calc(100vw - 150px);
+  text-align: center;
+  margin: 0 auto;
+
+  @media screen and (max-width: 700px) {
+    left: 100px;
+    width: calc(100vw - 100px);
+  }
   h3 {
     font-size: 23px;
     margin-bottom: 20px;

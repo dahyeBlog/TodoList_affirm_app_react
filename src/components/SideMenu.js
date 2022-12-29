@@ -51,6 +51,13 @@ const MenuSection = styled.section`
   .sidebar ul li:hover a {
     color: #fff;
   }
+
+  @media screen and (max-width:700px){
+    .sidebar {
+    width: 100px;
+    height: 100%;
+    }
+  }
 `;
 
 export default SideMenu;

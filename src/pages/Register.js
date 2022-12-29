@@ -68,8 +68,7 @@ const Register = () => {
       });
 
       navigate("/");
-      alert('회원가입이 되었습니다.')
-
+      alert("회원가입이 되었습니다.");
     } catch (error) {
       setData({ ...data, error: alert(error.message), loading: false });
     }
@@ -91,7 +90,7 @@ const Register = () => {
     console.log(data);
 
     navigate("/");
-    alert('회원가입이 되었습니다.')
+    alert("회원가입이 되었습니다.");
   };
 
   return (
@@ -138,6 +137,17 @@ const Register = () => {
 };
 
 const RegisterSection = styled.section`
+  position: absolute;
+  left: 150px;
+  width: calc(100vw - 150px);
+  text-align: center;
+  margin: 0 auto;
+
+  @media screen and (max-width: 700px) {
+    left: 100px;
+    width: calc(100vw - 100px);
+  }
+
   h3 {
     font-size: 23px;
     margin-bottom: 20px;

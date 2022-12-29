@@ -68,6 +68,11 @@ const WeatherSearch = styled.div`
   width: calc(100vw - 150px);
   text-align: center;
   margin: 0 auto;
+
+  @media screen and (max-width: 700px) {
+    left: 100px;
+    width: calc(100vw - 100px);
+  }
 `;
 
 const BackImg = styled.div`
@@ -98,6 +103,10 @@ const BackImg = styled.div`
 
   &.overcast {
     background-image: url(${Overcast});
+  }
+
+  @media screen and (max-width: 700px) {
+    width: calc(100vw - 100px);
   }
 `;
 
