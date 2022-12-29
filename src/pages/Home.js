@@ -37,8 +37,8 @@ const Home = () => {
             </h1>
             <div className="condition-high-low">
               <h1>{placeInfo.condition}</h1>
-              <h1>{placeInfo.celsius?.high} ℃</h1>
-              <h1>{placeInfo.celsius?.low} ℃</h1>
+              <h1>최고: {placeInfo.celsius?.high} ℃</h1>
+              <h1>최저: {placeInfo.celsius?.low} ℃</h1>
             </div>
           </div>
 
@@ -175,15 +175,18 @@ const WeatherContainer = styled.div`
   .condition-high-low {
     padding: 10px 10px;
     border-left: 1px solid #eee;
+    text-align: start;
   }
 
   .condition-high-low > h1:nth-of-type(1) {
     font-size: 35px;
+    margin-bottom: 25px;
   }
 
   .condition-high-low > h1:nth-of-type(2),
   h1:nth-of-type(3) {
     font-size: 25px;
+    margin-top: 10px;
   }
 
   @media screen and (max-width: 500px) {
