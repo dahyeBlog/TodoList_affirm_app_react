@@ -68,6 +68,8 @@ const Register = () => {
       });
 
       navigate("/");
+      alert('회원가입이 되었습니다.')
+
     } catch (error) {
       setData({ ...data, error: alert(error.message), loading: false });
     }
@@ -89,6 +91,7 @@ const Register = () => {
     console.log(data);
 
     navigate("/");
+    alert('회원가입이 되었습니다.')
   };
 
   return (

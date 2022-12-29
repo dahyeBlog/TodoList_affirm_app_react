@@ -8,7 +8,7 @@ const SideMenu = () => {
       <div className="sidebar">
         <ul>
           <li>
-            <Link to="/positive">긍정확언</Link>
+            <Link to="/positive">동기부여</Link>
           </li>
 
           <li>

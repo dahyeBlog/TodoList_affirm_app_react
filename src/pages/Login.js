@@ -46,6 +46,7 @@ const Login = () => {
       });
 
       navigate("/");
+      alert("로그인이 되었습니다.");
     } catch (error) {
       setData({ ...data, error: alert(error.message), loading: false });
     }
@@ -64,9 +65,9 @@ const Login = () => {
 
     // 사용자를 받아오고, 구글로 로그인을 하기 위해 해당 provider 를 가져와 팝업창으로 로그인을 하게 해주는 signInWithPopup 함수를 리턴해준다.
     const data = await signInWithPopup(auth, provider);
-    console.log(data);
 
     navigate("/");
+    alert("로그인이 되었습니다.");
   };
 
   return (
