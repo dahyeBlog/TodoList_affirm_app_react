@@ -49,6 +49,9 @@ const AccountSection = styled.section`
   width: calc(100vw - 150px);
   text-align: center;
   margin: 40px auto;
+  overflow-y: scroll;
+  height: calc(100vh - 200px);
+  
   h1 {
     font-size: 18px;
     font-weight: bold;

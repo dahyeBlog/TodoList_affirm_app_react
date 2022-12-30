@@ -48,7 +48,9 @@ const PositiveSection = styled.section`
   width: calc(100vw - 150px);
   text-align: center;
   padding-top: 30px;
-  top: 70px;
+  top: 80px;
+  overflow-y: scroll;
+  height: calc(100vh - 200px);
   .positiveContainer {
     padding: 20px;
     max-width: 450px;

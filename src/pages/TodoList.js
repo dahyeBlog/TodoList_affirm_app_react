@@ -102,6 +102,7 @@ const TodoListSection = styled.section`
   text-align: center;
   margin: 40px auto;
   top: 70px;
+
   .todoContainer {
     padding: 10px;
     max-width: 450px;
@@ -109,7 +110,10 @@ const TodoListSection = styled.section`
     margin: 0 auto;
     background-color: rgb(241 245 249);
     border-radius: 0.375rem;
+    overflow-y: scroll;
+    height: calc(100vh - 300px);
   }
+
   label {
     font-size: 18px;
     font-weight: bold;
@@ -155,7 +159,6 @@ const TodoListSection = styled.section`
     list-style: none;
   }
 
-  
   @media screen and (max-width: 700px) {
     left: 100px;
     width: calc(100vw - 100px);
