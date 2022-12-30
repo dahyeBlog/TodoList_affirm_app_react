@@ -64,9 +64,13 @@ const PositiveSection = styled.section`
     left: 100px;
     width: calc(100vw - 100px);
     .positiveContainer {
-      padding: 0px;
+      padding: 10px;
       max-width: 250px;
       width: 100%;
+
+      p {
+        font-size: 13px;
+      }
     }
   }
 

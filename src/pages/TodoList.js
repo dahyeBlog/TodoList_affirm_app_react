@@ -134,7 +134,7 @@ const TodoListSection = styled.section`
     border: 1px solid #eee;
     outline: none;
     border-radius: 5px;
-    font-size: 1.05rem;
+    font-size: 16px;
     line-height: 1.75rem;
   }
 
@@ -175,6 +175,7 @@ const TodoListSection = styled.section`
     input {
       width: 70%;
       margin-left: 0px;
+      font-size: 13px;
     }
     .addBtn {
       padding: 0px;
