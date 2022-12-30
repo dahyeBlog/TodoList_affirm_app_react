@@ -19,7 +19,10 @@ const Navbar = () => {
   return (
     <Nav className="flex">
       <h3>
-        <Link to="/"> 오늘의 할일 🕊️ </Link>
+        <Link to="/" onClick={() => (window.location.href = "/")}>
+          {" "}
+          오늘의 할일 🕊️{" "}
+        </Link>
       </h3>
 
       <NavWrapper>

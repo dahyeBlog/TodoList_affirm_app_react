@@ -18,14 +18,14 @@ const Home = () => {
     <WeatherSearch>
       <BackImg
         className={
-          placeInfo.condition?.toLowerCase().includes("맑음") ||
-          placeInfo.condition?.toLowerCase().includes("화창함")
+          placeInfo.condition?.includes("맑음") ||
+          placeInfo.condition?.includes("화창함")
             ? "clear"
-            : placeInfo.condition?.toLowerCase().includes("흐린")
+            : placeInfo.condition?.includes("흐린")
             ? "cloudy"
-            : placeInfo.condition?.toLowerCase().includes("비")
+            : placeInfo.condition?.includes("비")
             ? "rainy"
-            : placeInfo.condition?.toLowerCase().includes("눈")
+            : placeInfo.condition?.includes("눈")
             ? "snow"
             : "overcast"
         }
@@ -59,7 +59,7 @@ const Home = () => {
           <h2>
             {placeInfo.name}, {placeInfo.country}
           </h2>
-
+  
           <HomeText />
         </WeatherContainer>
       </BackImg>

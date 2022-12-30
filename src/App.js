@@ -11,6 +11,7 @@ import AccountBook from "./pages/AccountBook";
 import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
+
   return (
     <Router>
       <Navbar />
