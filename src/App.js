@@ -13,7 +13,7 @@ import PrivateRoute from "./components/PrivateRoute";
 function App() {
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Navbar />
       <SideMenu />
       <Routes>
