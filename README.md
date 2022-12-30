@@ -115,4 +115,12 @@ parseInt(stringNumber.replace(/,/g , ''))
 
 ```
 
+## 원 단위 변환
+   
+```
+   const commaAdd = (num) => {
+    const regexp = /\B(?=(\d{3})+(?!\d))/g;
+    return num.toString().replace(regexp, ",");
+  };
 
+```

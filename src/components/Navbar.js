@@ -16,7 +16,6 @@ const Navbar = () => {
     navigate("/login");
   };
 
-
   return (
     <Nav className="flex">
       <h3>
@@ -40,15 +39,18 @@ const Navbar = () => {
 };
 
 const Nav = styled.nav`
+  width: 100vw;
+  text-align: center;
+  margin: 0 auto;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 70px;
-  padding: 0px 20px;
   background: #579bb1;
   color: #fff;
   letter-spacing: 1px;
-  font-family: 'Gowun Dodum', sans-serif;
+  font-family: "Gowun Dodum", sans-serif;
 
   a {
     cursor: pointer;
@@ -56,22 +58,27 @@ const Nav = styled.nav`
     font-size: 18px;
     color: #fff;
     margin-right: 10px;
+    padding-left: 20px;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 100vw;
   }
 `;
 
 const NavWrapper = styled.div`
+  padding: 0 20px;
   button {
     padding: 3px;
     width: 80px;
     cursor: pointer;
     font-size: 18px;
     font-family: "Gowun Dodum", sans-serif;
-    background: #F8F4EA;
+    background: #f8f4ea;
     color: #444444;
     border: none;
     border-radius: 5px;
   }
-
 `;
 
 export default Navbar;

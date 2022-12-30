@@ -101,6 +101,7 @@ const TodoListSection = styled.section`
   width: calc(100vw - 150px);
   text-align: center;
   margin: 40px auto;
+  top: 70px;
   .todoContainer {
     padding: 10px;
     max-width: 450px;

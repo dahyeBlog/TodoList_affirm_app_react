@@ -124,6 +124,7 @@ const PositiveTextContainer = styled.div`
     h4 {
       width: 100%;
       text-align: center;
+      font-size: 14px;
     }
 
     .positive__actions {
@@ -150,6 +151,11 @@ const PositiveTextContainer = styled.div`
     .positiveText__Wrapper {
       max-width: 400px;
       width: 100%;
+
+      h4 {
+        font-size: 13px;
+        padding: 10px;
+      }
     }
 
     img {

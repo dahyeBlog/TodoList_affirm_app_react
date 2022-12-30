@@ -47,7 +47,8 @@ const PositiveSection = styled.section`
   left: 150px;
   width: calc(100vw - 150px);
   text-align: center;
-  margin: 40px auto;
+  padding-top: 30px;
+  top: 70px;
   .positiveContainer {
     padding: 20px;
     max-width: 450px;

@@ -8,7 +8,7 @@ import Login from "./pages/Login";
 import PositiveAffirm from "./pages/PositiveAffirm";
 import TodoList from "./pages/TodoList";
 import AccountBook from "./pages/AccountBook";
-import PrivateRoute from "./components/PrivateRoute"
+import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   return (
@@ -27,9 +27,30 @@ function App() {
         <Route path="/register" element={<Register />}></Route>
         <Route path="/login" element={<Login />}></Route>
 
-        <Route path="/positive" element={<PositiveAffirm />}></Route>
-        <Route path="/todolist" element={<TodoList />}></Route>
-        <Route path="/account" element={<AccountBook />}></Route>
+        <Route
+          path="/positive"
+          element={
+            <PrivateRoute>
+              <PositiveAffirm />
+            </PrivateRoute>
+          }
+        ></Route>
+        <Route
+          path="/todolist"
+          element={
+            <PrivateRoute>
+              <TodoList />
+            </PrivateRoute>
+          }
+        ></Route>
+        <Route
+          path="/account"
+          element={
+            <PrivateRoute>
+              <AccountBook />
+            </PrivateRoute>
+          }
+        ></Route>
       </Routes>
     </Router>
   );

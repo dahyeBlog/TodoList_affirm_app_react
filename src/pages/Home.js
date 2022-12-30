@@ -72,8 +72,8 @@ const WeatherSearch = styled.div`
   left: 150px;
   width: calc(100vw - 150px);
   text-align: center;
-  margin: 0 auto;
-
+  /* margin: 0 auto; */
+  top: 70px;
   @media screen and (max-width: 700px) {
     left: 100px;
     width: calc(100vw - 100px);

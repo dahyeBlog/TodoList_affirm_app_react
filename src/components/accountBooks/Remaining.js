@@ -43,6 +43,10 @@ const RemainingBudget_content = styled.div`
   @media screen and (max-width: 700px) {
     max-width: 200px;
     width: 100%;
+    span {
+      font-size: 15px;
+      width: 100px;
+    }
   }
 
   &.alert-danger {
@@ -52,6 +56,8 @@ const RemainingBudget_content = styled.div`
   &.alert-success {
     background-color: #cfe8a9;
   }
+
+
 `;
 
 export default RemainingBudget;

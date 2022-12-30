@@ -27,7 +27,8 @@ const MenuSection = styled.section`
   position: fixed;
   .sidebar {
     width: 150px;
-    height: 100%;
+    height: calc(100vh - 70px);
+    top:70px;
     background-color: #f8f4ea;
     position: fixed;
     text-align: center;
@@ -56,6 +57,8 @@ const MenuSection = styled.section`
     .sidebar {
     width: 100px;
     height: 100%;
+    height: calc(100vh - 70px);
+    top:70px;
     }
   }
 `;

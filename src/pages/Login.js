@@ -111,6 +111,7 @@ const Login = () => {
 const LoginSection = styled.section`
   position: absolute;
   left: 150px;
+  top: 70px;
   width: calc(100vw - 150px);
   text-align: center;
   margin: 0 auto;
