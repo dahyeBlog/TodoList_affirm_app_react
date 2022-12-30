@@ -21,7 +21,7 @@ const Todo = ({ todo, deleteTodo, toggleComplete }) => {
         </p>
       </div>
       <button className="deleteBtn" onClick={() => deleteTodo(todo.id)}>
-        <FontAwesomeIcon icon={faTrash} />
+        <FontAwesomeIcon className="deleteIcon" icon={faTrash} />
         <span>삭제</span>
       </button>
     </TodoListLi>
@@ -63,7 +63,7 @@ const TodoListLi = styled.li`
   }
 
   .deleteBtn {
-    width: 75px;
+    width: 70px;
     border: 1px solid #eee;
     background-color: #579bb1;
     cursor: pointer;
@@ -77,7 +77,12 @@ const TodoListLi = styled.li`
     }
 
     span {
-      margin-left: 5px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .deleteIcon {
+      font-size: 13px;
     }
   }
 

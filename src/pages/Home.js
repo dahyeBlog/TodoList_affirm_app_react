@@ -92,6 +92,7 @@ const BackImg = styled.div`
 
   &.clear {
     background-image: url(${Clear});
+    color: #3D3D3D;
   }
 
   &.cloudy {

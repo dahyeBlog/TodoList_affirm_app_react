@@ -5,6 +5,7 @@ import App from "./App";
 import AuthProvider from "./context/auth";
 import PositiveProvider from "./context/positive";
 import WeatherProvider from "./context/weather";
+import AccountBookProvider from "./context/accountBook";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -12,7 +13,9 @@ root.render(
     <AuthProvider>
       <WeatherProvider>
         <PositiveProvider>
-          <App />
+          <AccountBookProvider>
+            <App />
+          </AccountBookProvider>
         </PositiveProvider>
       </WeatherProvider>
     </AuthProvider>
