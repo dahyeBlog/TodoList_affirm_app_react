@@ -10,7 +10,7 @@ const WeatherProvider = ({ children }) => {
   // 날씨 api 가져오기 fetch
   const fetchWeather = async () => {
     try {
-      const response = await axios.get(`http://api.weatherapi.com/v1/forecast.json?key=4dda6246922942d697841951222912&q=${place}&days=1&aqi=no&alerts=no&lang=ko`);
+      const response = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=4dda6246922942d697841951222912&q=${place}&days=1&aqi=no&alerts=no&lang=ko`);
       const data = response.data  
             
       setPlaceInfo({
